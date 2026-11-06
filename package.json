@@ -1,0 +1,17 @@
+{
+  "name": "nuxt-optimizedeps-ssr-repro",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "nuxt dev",
+    "dev:no-ssr": "WITHOUT_VITE_SSR=1 nuxt dev",
+    "dev:workaround": "USE_SERVER_WORKAROUND=1 nuxt dev",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "dayjs": "1.11.13",
+    "nuxt": "4.6.4",
+    "vue": "latest",
+    "vue-router": "latest"
+  }
+}
